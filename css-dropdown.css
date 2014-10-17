@@ -9,7 +9,8 @@
     position: relative;
 }
 
-.cssdropdown a {
+.cssdropdown a, .cssdropdown__label {
+    cursor: pointer;
     display: block;
     width: 282px;
     height: 25px;
@@ -21,11 +22,17 @@
     padding-top: 10px;
 }
 
+.cssdropdown__input {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
 .cssdropdown:hover > a {
     color: #9c8d89;
 }
 
-.cssdropdown:hover > .cssdropdown__list-wrapper {
+.cssdropdown__input:checked ~ .cssdropdown__list-wrapper {
     display: block;
 }
 
