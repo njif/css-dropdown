@@ -1,0 +1,11 @@
+body {
+	background-color: #e1dddc;
+}
+
+.wrapper {
+	padding: 10px;
+}
+
+p {
+	font: 17px/30px Arial, Helvetica;
+}
